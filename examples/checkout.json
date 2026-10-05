@@ -1,0 +1,6 @@
+[
+  {"id":"checkout","service":"api","name":"POST /checkout","start_us":0,"end_us":100000},
+  {"id":"inventory","parent":"checkout","service":"inventory","name":"reserve","start_us":10000,"end_us":70000},
+  {"id":"payment","parent":"checkout","service":"payments","name":"authorize","start_us":40000,"end_us":90000},
+  {"id":"query","parent":"inventory","service":"db","name":"lookup","start_us":20000,"end_us":30000}
+]

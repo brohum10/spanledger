@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "spanledger"
+version = "0.1.0"
+description = "Overlap-aware interval accounting for application traces"
+requires-python = ">=3.11"
+license = "MIT"
+[project.scripts]
+spanledger = "spanledger:main"
+[tool.setuptools]
+py-modules = ["spanledger"]
